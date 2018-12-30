@@ -63,13 +63,20 @@ public class Students {
     }
 
 
-    /** view balance */
-    public void viewBalanca(){
-        System.out.println("Your balance is: $" + tuitionBalance);
-    }
+
 
     /** pay tuition */
+    public void payTuition(){
+        viewBalanca();
 
+        System.out.println("Enter your payment: $");
+        Scanner input = new Scanner(System.in);
+        int payment = input.nextInt();
+
+        tuitionBalance = tuitionBalance - payment;
+        System.out.println("Thank you for your payment of $" + payment);
+        viewBalanca();
+    }
 
     /** show status */
 
