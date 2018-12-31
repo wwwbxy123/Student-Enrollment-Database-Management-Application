@@ -62,7 +62,10 @@ public class Students {
         System.out.println("tuition balance: " + tuitionBalance);
     }
 
-
+    /** view balance */
+    public void viewBalanca(){
+        System.out.println("Your balance is: $" + tuitionBalance);
+    }
 
 
     /** pay tuition */
